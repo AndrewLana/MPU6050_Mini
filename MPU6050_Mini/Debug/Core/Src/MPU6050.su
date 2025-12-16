@@ -1,0 +1,4 @@
+../Core/Src/MPU6050.c:15:19:MPU6050_init	40	static
+../Core/Src/MPU6050.c:26:19:MPU6050_getAccel	48	static
+../Core/Src/MPU6050.c:44:19:MPU6050_getGyro	48	static
+../Core/Src/MPU6050.c:62:19:MPU6050_getTemperature	48	static
