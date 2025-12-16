@@ -25,7 +25,7 @@ Reads out x, y, and z gyroscope registers into a buffer, scaled to deg/s.
 * `uint8_t MPU6050_ADDR` - MPU6050 I2C address, usually 0x68 or 0x69
 * `float *buf` - Pointer to a float array where gyroscope data will be stored
 
-* `HAL_StatusTypeDef MPU6050_getTemperature(I2C_HandleTypeDef *hi2c, uint8_t MPU6050_ADDR, float *buf)`  
+`HAL_StatusTypeDef MPU6050_getTemperature(I2C_HandleTypeDef *hi2c, uint8_t MPU6050_ADDR, float *buf)`  
 Reads out temperature register into a buffer  
 
 * `I2C_HandleTypeDef *hi2c` - STM32 HAL I2C Handle
