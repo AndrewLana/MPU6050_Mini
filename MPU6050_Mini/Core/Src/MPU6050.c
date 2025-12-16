@@ -7,11 +7,6 @@
  */
 #include "MPU6050.h" //Include hardware interface libraries
 
-//MPU6050 Data Registers
-#define MPU6050_ACCEL_XOUT_H 0X3B
-#define MPU6050_GYRO_XOUT_H 0X3C
-#define MPU6050_TEMP_OUT_H 0x41
-
 HAL_StatusTypeDef MPU6050_init(I2C_HandleTypeDef *hi2c, uint8_t MPU6050_ADDR) {
 
 	uint8_t data = 0x00; //0x00 to clear sleep bit

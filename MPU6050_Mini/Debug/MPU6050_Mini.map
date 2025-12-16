@@ -117,6 +117,7 @@ Discarded input sections
  .group         0x00000000        0xc ./Core/Src/MPU6050.o
  .group         0x00000000        0xc ./Core/Src/MPU6050.o
  .group         0x00000000        0xc ./Core/Src/MPU6050.o
+ .group         0x00000000        0xc ./Core/Src/MPU6050.o
  .text          0x00000000        0x0 ./Core/Src/MPU6050.o
  .data          0x00000000        0x0 ./Core/Src/MPU6050.o
  .bss           0x00000000        0x0 ./Core/Src/MPU6050.o
@@ -124,6 +125,7 @@ Discarded input sections
                 0x00000000       0xe0 ./Core/Src/MPU6050.o
  .text.MPU6050_getTemperature
                 0x00000000       0x74 ./Core/Src/MPU6050.o
+ .group         0x00000000        0xc ./Core/Src/main.o
  .group         0x00000000        0xc ./Core/Src/main.o
  .group         0x00000000        0xc ./Core/Src/main.o
  .group         0x00000000        0xc ./Core/Src/main.o
@@ -238,6 +240,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x16 ./Core/Src/main.o
  .debug_macro   0x00000000       0x16 ./Core/Src/main.o
  .debug_macro   0x00000000      0x146 ./Core/Src/main.o
+ .debug_macro   0x00000000       0x16 ./Core/Src/main.o
  .group         0x00000000        0xc ./Core/Src/stm32f3xx_hal_msp.o
  .group         0x00000000        0xc ./Core/Src/stm32f3xx_hal_msp.o
  .group         0x00000000        0xc ./Core/Src/stm32f3xx_hal_msp.o
@@ -3463,85 +3466,86 @@ LOAD C:/ST/STM32CubeIDE_2.0.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.exte
  .debug_rnglists
                 0x000005a7      0x1da ./Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart.o
 
-.debug_macro    0x00000000    0x2020a
- .debug_macro   0x00000000      0x2b1 ./Core/Src/MPU6050.o
- .debug_macro   0x000002b1      0xad8 ./Core/Src/MPU6050.o
- .debug_macro   0x00000d89       0x22 ./Core/Src/MPU6050.o
- .debug_macro   0x00000dab       0x5b ./Core/Src/MPU6050.o
- .debug_macro   0x00000e06       0x2a ./Core/Src/MPU6050.o
- .debug_macro   0x00000e30       0x94 ./Core/Src/MPU6050.o
- .debug_macro   0x00000ec4       0x43 ./Core/Src/MPU6050.o
- .debug_macro   0x00000f07       0x34 ./Core/Src/MPU6050.o
- .debug_macro   0x00000f3b       0x16 ./Core/Src/MPU6050.o
- .debug_macro   0x00000f51       0x57 ./Core/Src/MPU6050.o
- .debug_macro   0x00000fa8       0x9e ./Core/Src/MPU6050.o
- .debug_macro   0x00001046      0x370 ./Core/Src/MPU6050.o
- .debug_macro   0x000013b6      0x112 ./Core/Src/MPU6050.o
- .debug_macro   0x000014c8       0x10 ./Core/Src/MPU6050.o
- .debug_macro   0x000014d8       0x16 ./Core/Src/MPU6050.o
- .debug_macro   0x000014ee       0x4a ./Core/Src/MPU6050.o
- .debug_macro   0x00001538       0x34 ./Core/Src/MPU6050.o
- .debug_macro   0x0000156c       0x10 ./Core/Src/MPU6050.o
- .debug_macro   0x0000157c       0x58 ./Core/Src/MPU6050.o
- .debug_macro   0x000015d4       0x8e ./Core/Src/MPU6050.o
- .debug_macro   0x00001662       0x1c ./Core/Src/MPU6050.o
- .debug_macro   0x0000167e      0x185 ./Core/Src/MPU6050.o
- .debug_macro   0x00001803       0x16 ./Core/Src/MPU6050.o
- .debug_macro   0x00001819       0x16 ./Core/Src/MPU6050.o
- .debug_macro   0x0000182f      0x146 ./Core/Src/MPU6050.o
- .debug_macro   0x00001975      0x158 ./Core/Src/MPU6050.o
- .debug_macro   0x00001acd       0x2e ./Core/Src/MPU6050.o
- .debug_macro   0x00001afb       0x28 ./Core/Src/MPU6050.o
- .debug_macro   0x00001b23      0x103 ./Core/Src/MPU6050.o
- .debug_macro   0x00001c26       0x6a ./Core/Src/MPU6050.o
- .debug_macro   0x00001c90      0x1df ./Core/Src/MPU6050.o
- .debug_macro   0x00001e6f       0x1c ./Core/Src/MPU6050.o
- .debug_macro   0x00001e8b       0x22 ./Core/Src/MPU6050.o
- .debug_macro   0x00001ead       0xd9 ./Core/Src/MPU6050.o
- .debug_macro   0x00001f86     0x102d ./Core/Src/MPU6050.o
- .debug_macro   0x00002fb3      0x11f ./Core/Src/MPU6050.o
- .debug_macro   0x000030d2    0x1535a ./Core/Src/MPU6050.o
- .debug_macro   0x0001842c       0x6d ./Core/Src/MPU6050.o
- .debug_macro   0x00018499     0x3574 ./Core/Src/MPU6050.o
- .debug_macro   0x0001ba0d       0x4f ./Core/Src/MPU6050.o
- .debug_macro   0x0001ba5c      0x953 ./Core/Src/MPU6050.o
- .debug_macro   0x0001c3af      0x84a ./Core/Src/MPU6050.o
- .debug_macro   0x0001cbf9      0x1b5 ./Core/Src/MPU6050.o
- .debug_macro   0x0001cdae      0x23a ./Core/Src/MPU6050.o
- .debug_macro   0x0001cfe8      0x1ea ./Core/Src/MPU6050.o
- .debug_macro   0x0001d1d2      0x1bc ./Core/Src/MPU6050.o
- .debug_macro   0x0001d38e       0x30 ./Core/Src/MPU6050.o
- .debug_macro   0x0001d3be       0x3c ./Core/Src/MPU6050.o
- .debug_macro   0x0001d3fa      0x235 ./Core/Src/MPU6050.o
- .debug_macro   0x0001d62f       0xc5 ./Core/Src/MPU6050.o
- .debug_macro   0x0001d6f4      0x21d ./Core/Src/MPU6050.o
- .debug_macro   0x0001d911      0x22c ./Core/Src/MPU6050.o
- .debug_macro   0x0001db3d       0x5b ./Core/Src/MPU6050.o
- .debug_macro   0x0001db98       0xa5 ./Core/Src/MPU6050.o
- .debug_macro   0x0001dc3d       0x81 ./Core/Src/MPU6050.o
- .debug_macro   0x0001dcbe       0xd3 ./Core/Src/MPU6050.o
- .debug_macro   0x0001dd91      0x5ba ./Core/Src/MPU6050.o
- .debug_macro   0x0001e34b       0x44 ./Core/Src/MPU6050.o
- .debug_macro   0x0001e38f      0x347 ./Core/Src/MPU6050.o
- .debug_macro   0x0001e6d6      0x2ba ./Core/Src/main.o
- .debug_macro   0x0001e990       0x8e ./Core/Src/main.o
- .debug_macro   0x0001ea1e       0x51 ./Core/Src/main.o
- .debug_macro   0x0001ea6f      0x190 ./Core/Src/main.o
- .debug_macro   0x0001ebff       0x55 ./Core/Src/main.o
- .debug_macro   0x0001ec54       0x58 ./Core/Src/main.o
- .debug_macro   0x0001ecac       0x61 ./Core/Src/main.o
- .debug_macro   0x0001ed0d       0x3c ./Core/Src/main.o
- .debug_macro   0x0001ed49      0x1d2 ./Core/Src/stm32f3xx_hal_msp.o
- .debug_macro   0x0001ef1b      0x1dc ./Core/Src/stm32f3xx_it.o
- .debug_macro   0x0001f0f7      0x1c3 ./Core/Src/system_stm32f3xx.o
- .debug_macro   0x0001f2ba      0x1e7 ./Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.o
- .debug_macro   0x0001f4a1      0x1c3 ./Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_cortex.o
- .debug_macro   0x0001f664      0x1ca ./Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.o
- .debug_macro   0x0001f82e      0x28f ./Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c.o
- .debug_macro   0x0001fabd      0x1c3 ./Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c_ex.o
- .debug_macro   0x0001fc80      0x1e7 ./Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.o
- .debug_macro   0x0001fe67      0x1c3 ./Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.o
- .debug_macro   0x0002002a      0x1e0 ./Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart.o
+.debug_macro    0x00000000    0x20218
+ .debug_macro   0x00000000      0x2a4 ./Core/Src/MPU6050.o
+ .debug_macro   0x000002a4      0xad8 ./Core/Src/MPU6050.o
+ .debug_macro   0x00000d7c       0x22 ./Core/Src/MPU6050.o
+ .debug_macro   0x00000d9e       0x5b ./Core/Src/MPU6050.o
+ .debug_macro   0x00000df9       0x2a ./Core/Src/MPU6050.o
+ .debug_macro   0x00000e23       0x94 ./Core/Src/MPU6050.o
+ .debug_macro   0x00000eb7       0x43 ./Core/Src/MPU6050.o
+ .debug_macro   0x00000efa       0x34 ./Core/Src/MPU6050.o
+ .debug_macro   0x00000f2e       0x16 ./Core/Src/MPU6050.o
+ .debug_macro   0x00000f44       0x57 ./Core/Src/MPU6050.o
+ .debug_macro   0x00000f9b       0x9e ./Core/Src/MPU6050.o
+ .debug_macro   0x00001039      0x370 ./Core/Src/MPU6050.o
+ .debug_macro   0x000013a9      0x112 ./Core/Src/MPU6050.o
+ .debug_macro   0x000014bb       0x10 ./Core/Src/MPU6050.o
+ .debug_macro   0x000014cb       0x16 ./Core/Src/MPU6050.o
+ .debug_macro   0x000014e1       0x4a ./Core/Src/MPU6050.o
+ .debug_macro   0x0000152b       0x34 ./Core/Src/MPU6050.o
+ .debug_macro   0x0000155f       0x10 ./Core/Src/MPU6050.o
+ .debug_macro   0x0000156f       0x58 ./Core/Src/MPU6050.o
+ .debug_macro   0x000015c7       0x8e ./Core/Src/MPU6050.o
+ .debug_macro   0x00001655       0x1c ./Core/Src/MPU6050.o
+ .debug_macro   0x00001671      0x185 ./Core/Src/MPU6050.o
+ .debug_macro   0x000017f6       0x16 ./Core/Src/MPU6050.o
+ .debug_macro   0x0000180c       0x16 ./Core/Src/MPU6050.o
+ .debug_macro   0x00001822      0x146 ./Core/Src/MPU6050.o
+ .debug_macro   0x00001968      0x158 ./Core/Src/MPU6050.o
+ .debug_macro   0x00001ac0       0x2e ./Core/Src/MPU6050.o
+ .debug_macro   0x00001aee       0x28 ./Core/Src/MPU6050.o
+ .debug_macro   0x00001b16      0x103 ./Core/Src/MPU6050.o
+ .debug_macro   0x00001c19       0x6a ./Core/Src/MPU6050.o
+ .debug_macro   0x00001c83      0x1df ./Core/Src/MPU6050.o
+ .debug_macro   0x00001e62       0x1c ./Core/Src/MPU6050.o
+ .debug_macro   0x00001e7e       0x22 ./Core/Src/MPU6050.o
+ .debug_macro   0x00001ea0       0xd9 ./Core/Src/MPU6050.o
+ .debug_macro   0x00001f79     0x102d ./Core/Src/MPU6050.o
+ .debug_macro   0x00002fa6      0x11f ./Core/Src/MPU6050.o
+ .debug_macro   0x000030c5    0x1535a ./Core/Src/MPU6050.o
+ .debug_macro   0x0001841f       0x6d ./Core/Src/MPU6050.o
+ .debug_macro   0x0001848c     0x3574 ./Core/Src/MPU6050.o
+ .debug_macro   0x0001ba00       0x4f ./Core/Src/MPU6050.o
+ .debug_macro   0x0001ba4f      0x953 ./Core/Src/MPU6050.o
+ .debug_macro   0x0001c3a2      0x84a ./Core/Src/MPU6050.o
+ .debug_macro   0x0001cbec      0x1b5 ./Core/Src/MPU6050.o
+ .debug_macro   0x0001cda1      0x23a ./Core/Src/MPU6050.o
+ .debug_macro   0x0001cfdb      0x1ea ./Core/Src/MPU6050.o
+ .debug_macro   0x0001d1c5      0x1bc ./Core/Src/MPU6050.o
+ .debug_macro   0x0001d381       0x30 ./Core/Src/MPU6050.o
+ .debug_macro   0x0001d3b1       0x3c ./Core/Src/MPU6050.o
+ .debug_macro   0x0001d3ed      0x235 ./Core/Src/MPU6050.o
+ .debug_macro   0x0001d622       0xc5 ./Core/Src/MPU6050.o
+ .debug_macro   0x0001d6e7      0x21d ./Core/Src/MPU6050.o
+ .debug_macro   0x0001d904      0x22c ./Core/Src/MPU6050.o
+ .debug_macro   0x0001db30       0x5b ./Core/Src/MPU6050.o
+ .debug_macro   0x0001db8b       0xa5 ./Core/Src/MPU6050.o
+ .debug_macro   0x0001dc30       0x81 ./Core/Src/MPU6050.o
+ .debug_macro   0x0001dcb1       0xd3 ./Core/Src/MPU6050.o
+ .debug_macro   0x0001dd84      0x5ba ./Core/Src/MPU6050.o
+ .debug_macro   0x0001e33e       0x44 ./Core/Src/MPU6050.o
+ .debug_macro   0x0001e382      0x347 ./Core/Src/MPU6050.o
+ .debug_macro   0x0001e6c9       0x16 ./Core/Src/MPU6050.o
+ .debug_macro   0x0001e6df      0x2bf ./Core/Src/main.o
+ .debug_macro   0x0001e99e       0x8e ./Core/Src/main.o
+ .debug_macro   0x0001ea2c       0x51 ./Core/Src/main.o
+ .debug_macro   0x0001ea7d      0x190 ./Core/Src/main.o
+ .debug_macro   0x0001ec0d       0x55 ./Core/Src/main.o
+ .debug_macro   0x0001ec62       0x58 ./Core/Src/main.o
+ .debug_macro   0x0001ecba       0x61 ./Core/Src/main.o
+ .debug_macro   0x0001ed1b       0x3c ./Core/Src/main.o
+ .debug_macro   0x0001ed57      0x1d2 ./Core/Src/stm32f3xx_hal_msp.o
+ .debug_macro   0x0001ef29      0x1dc ./Core/Src/stm32f3xx_it.o
+ .debug_macro   0x0001f105      0x1c3 ./Core/Src/system_stm32f3xx.o
+ .debug_macro   0x0001f2c8      0x1e7 ./Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.o
+ .debug_macro   0x0001f4af      0x1c3 ./Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_cortex.o
+ .debug_macro   0x0001f672      0x1ca ./Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.o
+ .debug_macro   0x0001f83c      0x28f ./Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c.o
+ .debug_macro   0x0001facb      0x1c3 ./Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c_ex.o
+ .debug_macro   0x0001fc8e      0x1e7 ./Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.o
+ .debug_macro   0x0001fe75      0x1c3 ./Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc_ex.o
+ .debug_macro   0x00020038      0x1e0 ./Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart.o
 
 .debug_line     0x00000000     0xdfa9
  .debug_line    0x00000000      0x99f ./Core/Src/MPU6050.o
@@ -3563,7 +3567,7 @@ LOAD C:/ST/STM32CubeIDE_2.0.0/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.exte
  .debug_str     0x00000000    0xc0edb ./Core/Src/MPU6050.o
                               0xbe3c1 (size before relaxing)
  .debug_str     0x000c0edb        0x0 ./Core/Src/main.o
-                              0xbeba8 (size before relaxing)
+                              0xbebf3 (size before relaxing)
  .debug_str     0x000c0edb        0x0 ./Core/Src/stm32f3xx_hal_msp.o
                               0xbafb6 (size before relaxing)
  .debug_str     0x000c0edb        0x0 ./Core/Src/stm32f3xx_it.o
